@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.main{
+    backdrop-filter: blur(35px);
+    width: 450px;
+    height: 550px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.main h1{
+    text-align: center;
+    margin-bottom: 50px;
+   
+}
+
+.input-box{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box i{
+    font-size: 20px;
+    color: #fff;
+}
+
+.input-box input{
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff ;
+    background-color: transparent;    
+    
+}
+
+.input-box input::placeholder{
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check-box label{
+    font-size: 18px;
+    color: #fff;
+}
+
+.check-box label input{
+    padding: 10px 20px;
+    height: 18px;
+    width: 18px;
+}
+.check-box a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.check-box a:hover{
+    text-decoration: underline;
+    color: #000;
+    font-size: 19px;
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0a1f84;
+    transition: 0.2s;
+}
+
+button:hover{
+ color: #000;
+ font-size: 20px;
+ background-color: #1a31a0;   
+}
+
+
+
+.bottom-text{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom-text a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.bottom-text a:hover{
+    text-decoration: underline;
+    color: #000;
+    font-size: 19px;
+}
+
