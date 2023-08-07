@@ -4,124 +4,234 @@
     box-sizing: border-box;
 }
 
-body{
+html , body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-fluid{
     display: flex;
     align-items: center;
+}
+
+.navbar-brand{
+    padding-right: 5vw;
+    margin: 1vw 1vw;
+    font-size: 5vw;
+}
+
+.navbar-nav{
+    gap: 5vw;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+   background-image: url(https://connectivewebdesign.com/wp-content/uploads/2019/05/chapter-4-web-design-attributes.png);
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
-    height: 100vh;
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-position: center;
+    background-size: cover;
 }
 
-.main{
-    backdrop-filter: blur(35px);
-    width: 450px;
-    height: 550px;
-    padding: 20px 20px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-}
-
-.main h1{
+#hero{
+    margin-bottom: 10vw;
     text-align: center;
-    margin-bottom: 50px;
-   
+    color: #080808;
 }
 
-.input-box{
-    height: 110px;
+#hero h2{
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+}
+
+#hero h1{
+    font-size: 6.5vw;
+    margin-bottom: 2vw;
+}
+
+
+
+#content{
     width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    padding: 8vw 8vw;
+}
+
+#left1{
+    height: 100%;
+    width: 50%;
+    padding: 8vw 8vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.input-box i{
-    font-size: 20px;
-    color: #fff;
+#left h1{
+    font-size: 4.2vw;
+}
+#left p{
+    font-size: 1vw;
+    margin-top: 3vw;
+    color: #666;
+    margin-bottom: 3vw;
 }
 
-.input-box input{
-    height: 50px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #fff ;
-    background-color: transparent;    
-    
-}
-
-.input-box input::placeholder{
-    font-size: 18px;
-    color: #fff;
-    padding: 10px 10px;
-}
-
-.check-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.check-box label{
-    font-size: 18px;
-    color: #fff;
-}
-
-.check-box label input{
-    padding: 10px 20px;
-    height: 18px;
-    width: 18px;
-}
-.check-box a{
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.check-box a:hover{
-    text-decoration: underline;
-    color: #000;
-    font-size: 19px;
+#left span{
+    color:#FF735C;
 }
 
 button{
-    margin-top: 20px;
+    font-size: 1.2vw;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF735C;
+    color: #fff;
+}
+#right{
+    height: 100%;
+    width: 50%;
+}
+
+#right img{
     width: 100%;
-    height: 50px;
+    height: 100%;
+}
+
+#sign{
+    width: 450px;
+    height: 450px;
+    padding: 1vw 1vw;
+    border: 1px solid #FF735C;
+    border-radius: 10px;
+}
+
+#sign h3{
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+}
+
+#sign button{
+    padding: 1vw 2vw;
+    margin-top: 2vw;
+    border-radius: 10px;
+    margin-bottom: 1vw;
+    width: 100%;
+}
+
+#input-box input{
+    padding: 1vw 1vw;
+    margin: 1vw auto;
+    width: 100%;
     border: none;
     border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #fff;
-    background-color: #0a1f84;
-    transition: 0.2s;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
-button:hover{
- color: #000;
- font-size: 20px;
- background-color: #1a31a0;   
+#remember input{
+    padding: 1vw 1vw;
+    margin: 1vw auto;
+}
+
+#remember label{
+    font-size: 1vw;
+}
+
+#rigister p{
+    font-size: 1vw;
 }
 
 
 
-.bottom-text{
-    margin-top: 35px;
-    text-align: center;
-    font-size: 18px;
-}
 
-.bottom-text a{
-    text-decoration: none;
-    color: #fff;
-    transition: 0.2s;
-}
 
-.bottom-text a:hover{
-    text-decoration: underline;
-    color: #000;
-    font-size: 19px;
-}
+@media (max-width:600px) {
+    
+    #nav{
+        padding: 0 6vw;
+        height: 60px;
+    }
 
+    #nav>h1{
+        font-size:6vw;
+    }
+
+    #nav-part-2 h1{
+        display: none;
+    }
+    #nav-part-2 i{
+        display: block;
+        font-size: 6vw;
+    }
+
+    #nav button{
+        display: none;
+    }
+
+    #content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    #left1{
+        width: 100%;
+    }
+
+    #left h1{
+        margin-bottom: 20px;
+        font-size: 10vw;
+    }
+
+    #left p{
+        font-size: 2.5vw;
+        margin-bottom: 20px;
+    }
+
+    #left button{
+        font-size: 2.5vw;
+        padding: 2vw 2vw;
+        margin-top: 20px;
+    }
+
+
+    #right{
+        width: 100%;
+    }
+
+    #hero {
+        margin-bottom: 50vw;
+    }
+
+    #hero h2{
+        font-size: 4.5vw ;
+    }
+
+    #hero h1{
+        font-size: 10vw ;
+    }
+}
